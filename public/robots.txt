@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/db.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://paisaflora.com/sitemap.xml
