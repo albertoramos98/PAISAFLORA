@@ -14,14 +14,14 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 py-6 md:py-8 bg-transparent">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-paisa-dark shadow-xl border-b border-white/10 py-3 md:py-4">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <a href="#inicio" className="flex items-center group">
           <img
             src="/logo.png"
             alt="Paisaflora Logo"
-            className="h-16 md:h-20 lg:h-24 w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_4px_16px_rgba(0,0,0,0.5)]"
+            className="h-12 md:h-16 lg:h-18 w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]"
           />
         </a>
 
