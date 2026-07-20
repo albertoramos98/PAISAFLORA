@@ -100,7 +100,7 @@ export default function SobreNosotros() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base md:text-lg text-paisa-dark/70 font-manrope font-light leading-relaxed mb-8"
             >
-              En <strong>Paisaflora</strong>, concebimos el paisajismo como la unión perfecta entre el arte contemporáneo y la ciencia botánica. Contamos con años de experiencia diseñando, instalando y manteniendo jardines de alta gama para residencias de lujo y proyectos corporativos premium en Latinoamérica.
+              En <strong>Paisaflora</strong>, concebimos el paisajismo como la unión perfecta entre el arte contemporáneo y la ciencia botánica. Contamos con años de experiencia diseñando, ejecutando y manteniendo jardines de alta gama para chalés de lujo, villas exclusivas y espacios corporativos premium en Valencia y toda la Comunidad Valenciana.
             </motion.p>
 
             {/* Grid of features */}

@@ -38,7 +38,7 @@ export default function Contacto() {
     },
     {
       q: '¿Cuál es la zona de cobertura y cómo solicito un presupuesto?',
-      a: 'Brindamos atención personalizada en residencias y proyectos comerciales de alta gama. Puedes solicitar una cotización completando nuestro formulario en línea o haciendo clic en el botón flotante de WhatsApp para conversar con un especialista.',
+      a: 'Ofrecemos atención personalizada en chalés, villas y espacios exclusivos de Valencia y toda la Comunidad Valenciana. Puedes solicitar tu presupuesto rellenando nuestro formulario web o haciendo clic en el botón de WhatsApp para hablar directamente con nuestro equipo.',
     },
   ];
 
