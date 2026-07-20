@@ -5,7 +5,7 @@ import Servicios from './components/Servicios';
 import Galeria from './components/Galeria';
 import Proceso from './components/Proceso';
 import ElegirNosotros from './components/ElegirNosotros';
-import Testimonios from './components/Testimonios';
+import InstagramFeed from './components/InstagramFeed';
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
 import BotonWhatsapp from './components/BotonWhatsapp';
@@ -21,7 +21,7 @@ function App() {
       <Galeria />
       <Proceso />
       <ElegirNosotros />
-      <Testimonios />
+      <InstagramFeed />
       <Contacto />
       <Footer />
       <BotonWhatsapp />
