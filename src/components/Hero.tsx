@@ -54,17 +54,8 @@ export default function Hero() {
       {/* Main Hero Content */}
       <motion.div
         style={{ y: textY, opacity: opacityY }}
-        className="relative z-20 max-w-5xl mx-auto px-6 md:px-12 text-center text-white flex flex-col items-center pt-20 md:pt-24"
+        className="relative z-20 max-w-5xl mx-auto px-6 md:px-12 text-center text-white flex flex-col items-center pt-14 md:pt-18 -mt-2"
       >
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="inline-flex items-center gap-2 bg-paisa-light/10 border border-paisa-light/20 backdrop-blur-md px-4 py-1.5 rounded-full text-paisa-light font-manrope text-xs font-semibold tracking-widest uppercase mb-8"
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-paisa-light animate-pulse" />
-          Paisajismo Boutique
-        </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
