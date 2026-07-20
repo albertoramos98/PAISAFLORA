@@ -19,7 +19,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#inicio" className="flex items-center group">
           <img
-            src="/logo.png"
+            src="/Logo limpa.svg"
             alt="Paisaflora Logo"
             className="h-12 md:h-16 lg:h-18 w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]"
           />

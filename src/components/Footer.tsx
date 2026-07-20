@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-6">
             <a href="#inicio" className="flex items-center gap-3 group">
               <img
-                src="/logo.png"
+                src="/Logo limpa.svg"
                 alt="Paisaflora Logo"
                 className="h-14 md:h-18 w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_4px_10px_rgba(0,0,0,0.3)]"
               />
