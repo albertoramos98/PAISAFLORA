@@ -1,21 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Menu, X, PhoneCall } from 'lucide-react';
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navLinks = [
     { name: 'Inicio', href: '#inicio' },
@@ -27,20 +14,14 @@ export default function Navbar() {
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        isScrolled
-          ? 'bg-paisa-dark/95 backdrop-blur-md shadow-lg py-3 border-b border-white/5'
-          : 'bg-transparent py-5'
-      }`}
-    >
+    <nav className="absolute top-0 left-0 w-full z-50 py-6 md:py-8 bg-transparent">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
-        <a href="#inicio" className="flex items-center group py-1">
+        <a href="#inicio" className="flex items-center group">
           <img
             src="/logo.png"
             alt="Paisaflora Logo"
-            className="h-14 md:h-16 lg:h-20 w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_4px_12px_rgba(0,0,0,0.4)]"
+            className="h-16 md:h-20 lg:h-24 w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_4px_16px_rgba(0,0,0,0.5)]"
           />
         </a>
 
