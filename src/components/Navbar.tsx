@@ -14,14 +14,14 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-paisa-dark shadow-xl border-b border-white/10 py-3 md:py-4">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-paisa-dark shadow-xl border-b border-white/10 py-2 md:py-2.5">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <a href="#inicio" className="flex items-center group">
           <img
             src="/Logo limpa.svg"
             alt="Paisaflora Logo"
-            className="h-12 md:h-16 lg:h-18 w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]"
+            className="h-16 md:h-20 lg:h-24 w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]"
           />
         </a>
 
@@ -62,14 +62,14 @@ export default function Navbar() {
       {/* Mobile Menu Backdrop */}
       {isMobileMenuOpen && (
         <div
-          className="lg:hidden fixed inset-0 top-[60px] bg-black/60 backdrop-blur-sm z-40 transition-opacity"
+          className="lg:hidden fixed inset-0 top-[80px] bg-black/60 backdrop-blur-sm z-40 transition-opacity"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}
 
       {/* Mobile Menu Panel */}
       <div
-        className={`lg:hidden fixed top-[64px] right-0 w-full max-w-sm h-[calc(100vh-64px)] bg-paisa-dark border-l border-white/10 p-8 flex flex-col justify-between z-50 transition-transform duration-500 ease-out shadow-2xl ${
+        className={`lg:hidden fixed top-[80px] right-0 w-full max-w-sm h-[calc(100vh-80px)] bg-paisa-dark border-l border-white/10 p-8 flex flex-col justify-between z-50 transition-transform duration-500 ease-out shadow-2xl ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
