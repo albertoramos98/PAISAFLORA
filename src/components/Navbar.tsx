@@ -36,20 +36,12 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
-        <a href="#inicio" className="flex items-center gap-3 group">
+        <a href="#inicio" className="flex items-center group">
           <img
             src="/logo.png"
             alt="Paisaflora Logo"
-            className="h-10 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+            className="h-10 md:h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
           />
-          <div className="flex flex-col">
-            <span className="text-white font-playfair font-bold text-xl tracking-wider leading-none">
-              PAISAFLORA
-            </span>
-            <span className="text-paisa-light font-manrope text-[9px] tracking-[0.2em] font-semibold mt-1 uppercase">
-              Paisajismo de Lujo
-            </span>
-          </div>
         </a>
 
         {/* Desktop Menu */}

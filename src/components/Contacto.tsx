@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Phone, Mail, MapPin, Send, Plus, Minus, MessageSquare, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Send, Plus, Minus, MessageSquare, CheckCircle } from 'lucide-react';
 
 interface FaqItem {
   q: string;
@@ -104,7 +104,7 @@ export default function Contacto() {
                 Comencemos a diseñar tu <span className="text-paisa-natural italic">próximo jardín</span>.
               </h2>
               <p className="text-base text-paisa-dark/70 font-manrope font-light leading-relaxed">
-                ¿Tienes un proyecto en mente? Escríbenos o agenda una videollamada de asesoramiento inicial. Estamos listos para dar vida a tus ideas y crear tu espacio soñado.
+                ¿Tienes un proyecto en mente? Escríbenos por WhatsApp o déjanos un mensaje. La atención telefónica se realiza exclusivamente a través de WhatsApp.
               </p>
             </div>
 
@@ -112,11 +112,18 @@ export default function Contacto() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="flex gap-4 items-center bg-paisa-offwhite p-5 rounded-2xl border border-paisa-dark/5">
                 <div className="bg-paisa-dark p-3 rounded-xl text-paisa-light shadow-sm shrink-0">
-                  <Phone className="w-5 h-5" />
+                  <MessageSquare className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-playfair font-bold text-sm text-paisa-dark">Llámanos</h4>
-                  <p className="font-manrope text-sm text-paisa-dark/70 font-light mt-0.5">+54 9 11 2345 6789</p>
+                  <h4 className="font-playfair font-bold text-sm text-paisa-dark">Solo WhatsApp</h4>
+                  <a
+                    href="https://wa.me/34647351620?text=Hola%20Paisaflora,%20quisiera%20solicitar%20un%20presupuesto."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-manrope text-sm text-paisa-natural hover:text-paisa-dark font-semibold mt-0.5 block transition-colors duration-300"
+                  >
+                    +34 647 35 16 20
+                  </a>
                 </div>
               </div>
 
@@ -126,7 +133,12 @@ export default function Contacto() {
                 </div>
                 <div>
                   <h4 className="font-playfair font-bold text-sm text-paisa-dark">Escríbenos</h4>
-                  <p className="font-manrope text-sm text-paisa-dark/70 font-light mt-0.5">contacto@paisaflora.com</p>
+                  <a
+                    href="mailto:info@paisaflora.com"
+                    className="font-manrope text-sm text-paisa-dark/70 hover:text-paisa-natural font-light mt-0.5 block transition-colors duration-300"
+                  >
+                    info@paisaflora.com
+                  </a>
                 </div>
               </div>
 
@@ -136,7 +148,7 @@ export default function Contacto() {
                 </div>
                 <div>
                   <h4 className="font-playfair font-bold text-sm text-paisa-dark">Oficina Principal</h4>
-                  <p className="font-manrope text-sm text-paisa-dark/70 font-light mt-0.5">Av. del Libertador 4500, BA</p>
+                  <p className="font-manrope text-sm text-paisa-dark/70 font-light mt-0.5">Avinguda del País Valencià, 11, 46117 Bétera, Valencia, España</p>
                 </div>
               </div>
 
@@ -147,12 +159,12 @@ export default function Contacto() {
                 <div>
                   <h4 className="font-playfair font-bold text-sm text-paisa-dark">WhatsApp Directo</h4>
                   <a
-                    href="https://wa.me/5491123456789?text=Hola%20Paisaflora,%20quisiera%20solicitar%20un%20presupuesto."
+                    href="https://wa.me/34647351620?text=Hola%20Paisaflora,%20quisiera%20solicitar%20un%20presupuesto."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-manrope text-sm text-paisa-natural hover:text-paisa-dark font-semibold mt-0.5 block transition-colors duration-300"
                   >
-                    +54 9 11 2345 6789
+                    +34 647 35 16 20
                   </a>
                 </div>
               </div>
@@ -269,7 +281,7 @@ export default function Contacto() {
                       name="telefono"
                       value={formData.telefono}
                       onChange={handleInputChange}
-                      placeholder="Ej. +54 9 11..."
+                      placeholder="Ej. +34 647 35 16 20"
                       className={`w-full px-5 py-3.5 rounded-xl border bg-white text-paisa-dark font-manrope text-sm focus:outline-none transition-all duration-300 ${
                         errors.telefono ? 'border-red-400 focus:border-red-400 focus:ring-1 focus:ring-red-400' : 'border-paisa-dark/10 focus:border-paisa-natural focus:ring-1 focus:ring-paisa-natural'
                       }`}

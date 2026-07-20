@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 
 export default function BotonWhatsapp() {
-  const whatsappUrl = "https://wa.me/5491123456789?text=Hola%20Paisaflora,%20me%20gustar%C3%ADa%20solicitar%20un%20presupuesto%20para%20un%20proyecto%20de%20paisajismo.";
+  const whatsappUrl = "https://wa.me/34647351620?text=Hola%20Paisaflora,%20me%20gustar%C3%ADa%20solicitar%20un%20presupuesto%20para%20un%20proyecto%20de%20paisajismo.";
 
   return (
     <a
@@ -15,7 +15,7 @@ export default function BotonWhatsapp() {
       
       {/* Tooltip on hover */}
       <span className="absolute left-16 bg-paisa-dark text-white text-xs font-semibold px-4 py-2 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg border border-white/10 pointer-events-none whitespace-nowrap hidden sm:inline-block">
-        ¿Hablamos por WhatsApp?
+        Contacto únicamente por WhatsApp
       </span>
 
       {/* Decorative pulse ring */}

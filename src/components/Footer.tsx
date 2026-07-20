@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Mail, MapPin, Clock, MessageSquare } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -33,7 +33,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/paisaflora/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 hover:bg-paisa-natural text-white/80 hover:text-white p-2.5 rounded-full transition-all duration-300 border border-white/5 hover:scale-105"
@@ -88,14 +88,16 @@ export default function Footer() {
             <h4 className="font-playfair font-bold text-lg text-white">Contacto Directo</h4>
             <ul className="space-y-4">
               <li className="flex gap-3 items-start">
-                <Phone className="w-5 h-5 text-paisa-light shrink-0 mt-0.5" />
+                <MessageSquare className="w-5 h-5 text-paisa-light shrink-0 mt-0.5" />
                 <div>
-                  <span className="font-manrope text-xs text-white/40 block">Llamadas o WhatsApp</span>
+                  <span className="font-manrope text-xs text-white/40 block">Solo contacto por WhatsApp</span>
                   <a
-                    href="https://wa.me/5491123456789"
+                    href="https://wa.me/34647351620"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="font-manrope text-sm text-white/80 hover:text-paisa-light font-light transition-colors duration-300 block"
                   >
-                    +54 9 11 2345 6789
+                    +34 647 35 16 20
                   </a>
                 </div>
               </li>
@@ -104,10 +106,10 @@ export default function Footer() {
                 <div>
                   <span className="font-manrope text-xs text-white/40 block">Correo Electrónico</span>
                   <a
-                    href="mailto:contacto@paisaflora.com"
+                    href="mailto:info@paisaflora.com"
                     className="font-manrope text-sm text-white/80 hover:text-paisa-light font-light transition-colors duration-300 block"
                   >
-                    contacto@paisaflora.com
+                    info@paisaflora.com
                   </a>
                 </div>
               </li>
@@ -116,7 +118,7 @@ export default function Footer() {
                 <div>
                   <span className="font-manrope text-xs text-white/40 block">Oficina Comercial</span>
                   <span className="font-manrope text-sm text-white/80 font-light block">
-                    Av. del Libertador 4500, Palermo, CABA
+                    Avinguda del País Valencià, 11, 46117 Bétera, Valencia, España
                   </span>
                 </div>
               </li>
