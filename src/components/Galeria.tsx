@@ -46,16 +46,13 @@ export default function Galeria() {
     <section id="galeria" className="py-24 md:py-32 bg-paisa-cream relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-paisa-natural font-manrope text-sm font-semibold tracking-wider uppercase mb-3 block">
             Galería de Proyectos
           </span>
-          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-paisa-dark mb-6">
+          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-paisa-dark">
             Nuestras obras vivas de <span className="text-paisa-natural italic">diseño paisajístico</span>.
           </h2>
-          <p className="text-base md:text-lg text-paisa-dark/70 font-manrope font-light leading-relaxed">
-            Te presentamos una selección de nuestros trabajos reales de diseño, ejecución y mantenimiento. Cada imagen representa un desafío resuelto con maestría y compromiso verde.
-          </p>
         </div>
 
         {/* Masonry Layout Grid using CSS columns */}
