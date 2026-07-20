@@ -36,11 +36,11 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
-        <a href="#inicio" className="flex items-center group">
+        <a href="#inicio" className="flex items-center group py-1">
           <img
-            src="/logo-circle.png"
+            src="/logo.png"
             alt="Paisaflora Logo"
-            className="h-10 md:h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+            className="h-14 md:h-16 lg:h-20 w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_4px_12px_rgba(0,0,0,0.4)]"
           />
         </a>
 

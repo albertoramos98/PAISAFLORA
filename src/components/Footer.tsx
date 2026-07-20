@@ -17,7 +17,7 @@ export default function Footer() {
               <img
                 src="/logo.png"
                 alt="Paisaflora Logo"
-                className="h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                className="h-14 md:h-18 w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_4px_10px_rgba(0,0,0,0.3)]"
               />
               <div className="flex flex-col">
                 <span className="text-white font-playfair font-bold text-2xl tracking-wider leading-none">
