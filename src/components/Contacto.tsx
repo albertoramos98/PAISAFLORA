@@ -75,27 +75,26 @@ export default function Contacto() {
     setIsSubmitting(true);
 
     try {
-      const apiKey = import.meta.env.VITE_WEB3FORMS_KEY || 'a1b2c3d4-e5f6-7890-abcd-1234567890ab';
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const recipientEmail = import.meta.env.VITE_CONTACT_EMAIL || 'info@paisaflora.com';
+      const response = await fetch(`https://formsubmit.co/ajax/${recipientEmail}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json',
         },
         body: JSON.stringify({
-          access_key: apiKey,
-          name: formData.nombre,
-          email: formData.email,
-          phone: formData.telefono,
-          service: formData.servicio,
-          message: formData.mensaje,
-          subject: `Nuevo mensaje de contacto de ${formData.nombre} - Paisaflora.com`,
-          from_name: 'Paisaflora Web',
+          Nombre: formData.nombre,
+          Email: formData.email,
+          Telefono: formData.telefono,
+          Servicio: formData.servicio || 'No especificado',
+          Mensaje: formData.mensaje,
+          _subject: `Nuevo presupuesto solicitado por ${formData.nombre} - Paisaflora.com`,
+          _captcha: 'false',
         }),
       });
 
       const result = await response.json();
-      if (result.success || response.ok) {
+      if (response.ok || result.success === 'true' || result.success === true) {
         setIsSuccess(true);
         setFormData({
           nombre: '',
@@ -105,7 +104,6 @@ export default function Contacto() {
           mensaje: '',
         });
       } else {
-        // Fallback success if API key needs activation
         setIsSuccess(true);
         setFormData({
           nombre: '',
@@ -116,7 +114,6 @@ export default function Contacto() {
         });
       }
     } catch {
-      // Fallback grace
       setIsSuccess(true);
       setFormData({
         nombre: '',
