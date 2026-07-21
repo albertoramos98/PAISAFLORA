@@ -157,7 +157,7 @@ export default function InstagramFeed() {
                   />
 
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-paisa-dark/95 via-paisa-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-between text-white z-10">
+                  <div className="absolute inset-0 bg-gradient-to-t from-paisa-dark/95 via-paisa-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-between text-white z-10">
                     <div className="flex justify-end">
                       <div className="bg-white/20 backdrop-blur-md p-2 rounded-full border border-white/20">
                         <InstagramIcon className="w-5 h-5 text-white" />
@@ -165,10 +165,6 @@ export default function InstagramFeed() {
                     </div>
 
                     <div>
-                      <p className="font-manrope text-xs text-white/90 line-clamp-3 mb-4 leading-relaxed font-light">
-                        {post.caption}
-                      </p>
-
                       <div className="flex items-center gap-4 text-xs font-manrope font-semibold text-paisa-light border-t border-white/15 pt-3">
                         <span className="flex items-center gap-1">
                           <Heart className="w-3.5 h-3.5 fill-paisa-light" />
@@ -179,7 +175,7 @@ export default function InstagramFeed() {
                           {post.comments}
                         </span>
                         <span className="ml-auto flex items-center gap-1 text-[11px] text-white/80 uppercase tracking-wider">
-                          Ver post <ExternalLink className="w-3 h-3" />
+                          Ver en Instagram <ExternalLink className="w-3 h-3" />
                         </span>
                       </div>
                     </div>
